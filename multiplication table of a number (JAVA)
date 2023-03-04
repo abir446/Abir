@@ -1,0 +1,16 @@
+import java.io.*;
+class multiplication_Table
+{
+    public static void main(String args[])throws IOException
+    {
+        InputStreamReader read=new InputStreamReader(System.in);
+        BufferedReader in=new BufferedReader(read);
+        int inp;
+        System.out.println("Enter the number of which the multiplication table upto 10 is to be shown");
+        inp=Integer.parseInt(in.readLine());
+        for (int i=1;i<=10;i++)
+        {
+            System.out.println(inp+"X"+i+"="+(inp*i));
+        }
+    }
+}
