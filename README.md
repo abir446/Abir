@@ -1,3 +1,2 @@
 # Abir
-C programs-2nd sem
-These are all programs that I'm practicing for 2nd sem in Btech in CSE.
+These are all the programs that I'll be practicing for getting my first job
