@@ -1,0 +1,42 @@
+//In Chefland, each chicken has XXX legs and each duck has YYY legs.
+//Chef's farm can have exactly one type of bird.
+//Given that the birds on the farm have a total of ZZZ legs:
+//  Print CHICKEN, if the farm can have only chickens but not ducks.
+// Print DUCK, if the farm can have only ducks but not chickens.
+//Print ANY, if the farm can have either chickens or ducks.
+//Print NONE, if the farm can have neither chickens nor ducks.
+
+
+#include <iostream>
+using namespace std;
+
+int main()
+{
+    int t=3;
+    while (t--)
+    {
+        int x,y,z=6;
+        cout<<"Enter the number of legs of chicken: "<<endl;
+        cin>>x;
+        cout<<"Enter the number of legs of duck: "<<endl;
+        cin>>y;
+         if ((x+y)<=z)
+         {
+        if ((x==z || z%x==0) && (y==z || z%y==0))
+            cout<<"The farm can have both animals."<<endl;
+        else if (x==z || z%x==0)
+            cout<<"The farm can have chickens."<<endl;
+        else if (y==z || z%y==0)
+            cout<<"The farm can have ducks."<<endl;
+         }
+        else
+        {
+           if (x==z || z%x==0)
+            cout<<"The farm can have chickens."<<endl;
+           else if (y==z || z%y==0)
+            cout<<"The farm can have ducks."<<endl;
+        }
+    }
+
+    return 0;
+}
